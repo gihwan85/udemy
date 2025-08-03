@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: Arial; 
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-header {
+    background-image: url('https://cdn.pixabay.com/photo/2025/06/28/17/56/forest-9685700_1280.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    height: 200px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.sidebar nav ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: green;
+    text-decoration: none;
+    margin-bottom: 5px;
+    transition: background-color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #45a049;
+}
+
+.signup-form > form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.signup-form label + input {
+    margin-bottom: 10px;
+}
+.signup-form label[for="name"]::before {
+    content: '👤';
+    margin-right: 5px;
+}
+
+.signup-form input, .signup-form button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.signup-form button:hover {
+    background-color: #45a049;
+}
+.sidebar {
+    position:absolute;
+    top: 220px;
+    left: 20px;
+    width: 200px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    flex: 1;
+}
+
+.sidebar nav ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+button:hover {
+    animation: pulse 0.5s;
+}
+
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p ~ p {
+    margin-top: 10px;
+}
+
+
+
