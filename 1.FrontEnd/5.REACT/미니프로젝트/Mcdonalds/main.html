@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>맥도날드 클론코딩</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header" style="margin-top: 0px;">
+            <div class="headArea">
+                <strong class="hLogo">
+                    <a class="logo" href="/" title="메인으로 이동">
+                        <img src="https://www.mcdonalds.co.kr/kor/images/common/logo.png" alt="맥도날드 로고">
+                    </a>
+                </strong>
+                <nav class="hMenu">
+                    <div class="menu">
+                        <ul class="depth1">
+                            <li>
+                                <a class="dth1" href="/">Menu</a>
+                            </li>
+                            <li>
+                                <a class="dth1" href="/">Store</a>
+                            </li>
+                            <li>
+                                <a class="dth1" href="/">What's New</a>
+                            </li>
+                            <li>
+                                <a class="dth1" href="/">Story</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //menu -->
+                    <form id="commonSearchForm" method="post">
+                        <div class="util">
+                            <a class="renter" href="/kor/store/rental.do" title="임차문의로 이동">임차문의</a>
+                            <a class="recruit" href="/korea/store/people/recruit/do" title="인채채용으로 이동">RECRUIT</a>
+                            <a class="lang" href="/eng/main.do" title="영문사이트로 이동">ENG</a>
+                            <div class="topSearch">
+                                <button class="srch" type="button">검색열기</button>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- //util -->
+                </nav>
+            </div>
+            <form id="gotoMenuForm" method="post"></form>
+        </header>
+        <!-- //header -->
+        <div id="container">
+            <div class="content">
+                <h1 class="hide" data-desc="메인">Main</h1>
+                <div class="mainEvent basicSwiper">
+                    <button class="ctrl prev" type="button">이전 배너 보기</button>
+                    <div class="swiper swiper-container swiper-container-horizontal"></div>
+                    <button class="ctrl next" type="button">다음 배너 보기</button>
+                    <div class="indicator"></div>
+                </div>
+                <!-- //mainEvent -->
+                <div class="contArea mainCont">
+                    <div class="inner">
+                        <h2 class="titMain">McDonald's LIVE</h2>
+                        <ul id="menuList" class="whatsNew">
+                            <li>
+                                <a href="#">
+                                    <div class="tmb">
+                                        <img src="https://www.mcdonalds.co.kr/upload/main/card/1751352624941.jpg">
+                                    </div>
+                                    <div class="con">
+                                        <span class="blind">
+                                            부드러운 고구마 크로켓에
+                                        </span>
+                                        <strong class="tit">
+                                            익산 고구마 모짜렐라 버거와 함께
+                                            <br>
+                                            고소한 치즈가 쏙!
+                                        </strong>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="tmb">
+                                        <img src="https://www.mcdonalds.co.kr/upload/main/card/1753316622014.jpg">
+                                    </div>
+                                    <div class="con">
+                                        <span class="blind">
+                                            한국의 맛 춘식이 팩 출시_춘식이 인형 팩 춘식이 인형 키링 1종 선택 + 익산 고구마 모짜렐라 버거 세트_춘식이 보냉백 팩 춘식이
+                                            보냉백 + 익산 고구마 모짜렐라 버거 세트
+                                        </span>
+                                        <strong class="tit">
+                                            익산 고구마 모짜렐라 버거와 함께
+                                            <br>
+                                            귀여운 춘식이를 만나보세요!
+                                        </strong>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="tmb">
+                                        <img src="https://www.mcdonalds.co.kr/upload/main/card/1747819170133.jpg">
+                                    </div>
+                                    <div class="con">
+                                        <span class="blind">
+                                            파란 하늘과 흰 구름을 배경으로 한 맥도날드 맥드라이브 VIP 클럽 안내 이미지. 중앙에는 맥도날드 로고 위에 'McDrive' 간판과
+                                            'VIP Club'이라고 적힌 빨간 원형 간판이 세워져 있음. 상단에는 '맥드라이브 VIP 클럽'이라는 문구가 강조되어 있음
+                                        </span>
+                                        <strong class="tit">
+                                            맥드라이브에서 스페셜팩 구매하고
+                                            <br>
+                                            VIP 클럽 회원이 되어보세요!
+                                        </strong>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="tmb">
+                                        <img src="https://www.mcdonalds.co.kr/upload/main/card/1749548602338.jpg">
+                                    </div>
+                                    <div class="con">
+                                        <span class="blind">
+                                            new 클래식 핫도그’라는 문구와 함께, 참깨 번에 소시지, 볶은 양파, 피클, 케첩, 머스터드가 들어간 핫도그 이미지
+                                        </span>
+                                        <strong class="tit">
+                                            두툼한 소시지로 든든하게!
+                                            <br>
+                                            NEW 클래식 핫도그
+                                        </strong>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="tmb">
+                                        <img src="https://www.mcdonalds.co.kr/upload/main/card/1746003326777.jpg">
+                                    </div>
+                                    <div class="con">
+                                        <span class="blind">
+                                            맥도날드 신제품 '맥윙'. 바삭한 맥윙 두 조각과 디핑 소스, 코카 콜라가 나무 테이블 위에 놓여 있으며, 배경에는 주황색 그라데이션과
+                                            'new 맥윙' 문구가 있음
+                                        </span>
+                                        <strong class="tit">
+                                            겉은 바삭! 속은 쫄깃!
+                                            <br>
+                                            겉바속쫄 맥윙
+                                        </strong>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="tmb">
+                                        <img src="https://www.mcdonalds.co.kr/upload/main/card/1753838759065.jpg">
+                                    </div>
+                                    <div class="con">
+                                        <span class="blind">
+                                            1995스낵랩 제품 이미지
+                                        </span>
+                                        <strong class="tit">
+                                            맥도날드 대표 인기 간식을
+                                            <br>
+                                            가성비 맛집 해피 스낵으로 만나요!
+                                        </strong>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <form id="searchForm" name="searchForm" method="get"></form>
+            </div>
+            <div class="aside"></div>
+            <button class="btnTop" type="button" title="맨 위로 가기">TOP</button>
+        </div>
+        <!-- //container -->
+        <footer class="footer">
+            <div class="footArea">
+                <ul class="fUtil">
+                    <li class="privacy">
+                        <a href="/kor/etc/private.do">개인정보 처리방침</a>
+                    </li>
+                    <li>
+                        <a href="/kor/etc/sitemap.do">사이트맵</a>
+                    </li>
+                    <li>
+                        <a href="/kor/store/rental.do">임차문의</a>
+                    </li>
+                    <li>
+                        <a href="/kor/etc/private.do">고객문의</a>
+                    </li>
+                    <li>
+                        <a href="/kor/etc/private.do">인재채용</a>
+                    </li>
+                </ul>
+                <ul class="fSns">
+                    <li>
+                        <a href="https://www.facebook.com/McDonaldsKorea" class="fb" target="_blank" title="새창 열림">맥도날드 페이스북</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/mcdonalds_kr/" class="ig" target="_blank" title="새창 열림">맥도날드 인스타그램</a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/user/McDonaldsKor" class="yt" target="_blank" title="새창 열림">맥도날드 유투브</a>
+                    </li>
+                    <li>
+                        <a href="https://story.kakao.com/ch/mcdonalds/feed" class="ks" target="_blank" title="새창 열림">맥도날드 카카오스토리</a>
+                    </li>
+                    
+                    <li class="web_accessibility">
+                        <a href="http://kdaa.or.kr/CertificationSite/WA/2200/Detail" target="_blank"
+                            title="한국디지털접근성진흥원 홈페이지 바로가기_새창">
+                            <img src="https://www.mcdonalds.co.kr/kor/images/common/web_accessibility.png" alt="접근성 마크">
+
+                        </a>
+                    </li>
+                    </li>
+                </ul>
+                <div class="fInfo">
+                    <ul class="info">
+                        <li>한국맥도날드(유)</li>
+                        <li>대표이사: 김기원</li>
+                        <li>사업자등록번호: 101-81-26409</li>
+                        <li>전화주문: 1600-5252</li>
+                    </ul>
+                    <p class="copy">
+                        COPYRIGHT © 2019 ALL RIGHTS RESERVED BY McDonald's.
+                    </p>
+                </div>
+                <div class="f_isms">
+                    <div class="icon">
+                        <img src="https://www.mcdonalds.co.kr/kor/images/common/web_isms.png" alt="ISMS">
+                    </div>
+                    <p class="info">
+                        [인증범위 : 대외서비스(홈페이지, 맥딜리버리, 채용, VOC, 쿠폰앱)(심사받지 않은 물리적 인프라 영역 제외)]
+                    </p>
+                    <p class="date">[유효기간 : 2024. 08. 07 ~ 2027. 08. 06.]</p>
+                </div>
+            </div>
+        </footer>
+        <!-- //footer -->
+    </div>
+    <!-- //wrapper -->
+</body>
+
+</html>

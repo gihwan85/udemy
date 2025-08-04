@@ -1,0 +1,864 @@
+* {
+    -webkit-text-size-adjust: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    margin: 0;
+    height: 100%
+}
+
+body {
+    height: 100%;
+    background: #fff;
+    word-wrap: break-word;
+    word-break: keep-all;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+select,
+textarea,
+p,
+blockquote,
+th,
+td,
+button {
+    margin: 0;
+    padding: 0
+}
+
+body,
+input,
+select,
+textarea,
+button,
+pre {
+    font-family: SpeedeeK, Malgun Gothic, '맑은 고딕', Dotum, '돋움', Arial, sans-serif;
+    color: #808080;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.9;
+}
+
+section,
+nav,
+article,
+aside,
+hgroup,
+header,
+footer,
+iframe {
+    display: block;
+}
+
+form,
+fieldset,
+img,
+input,
+button {
+    border: 0 none;
+    background: none
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    vertical-align: top;
+}
+
+em {
+    font-style: normal
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+    font-weight: 500
+}
+
+ul,
+ol,
+li {
+    list-style: none outside
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+legend {
+    display: block;
+    width: 0;
+    height: 0;
+    text-indent: -9000px;
+    overflow: hidden
+}
+
+caption {
+    overflow: hidden;
+    margin-left: -9999px;
+    width: 1px;
+    height: 1px;
+    font-size: 1px;
+    line-height: 0
+}
+
+label {
+    cursor: pointer
+}
+
+.hide,
+.skip,
+.blind {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0
+}
+
+
+/* layout */
+.wrapper {
+    overflow: hidden;
+    position: relative;
+    min-width: 1280px;
+    min-height: 100%;
+    padding: 140px 0 230px
+}
+
+.wrapper footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+.headArea,
+.footArea {
+    width: 1168px;
+    margin: 0 auto
+}
+
+.inner {
+    position: relative;
+    width: 1168px;
+    margin: 0 auto
+}
+
+.inner.type02 {
+    width: 100%
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-width: 1280px;
+    height: 141px;
+    text-align: center;
+    border-bottom: 1px solid #ffbc0d;
+    background: #fff;
+}
+
+.header .headArea {
+    height: 100%
+}
+
+.header .hLogo {
+    position: relative;
+    top: 28px;
+    float: left;
+    z-index: 1
+}
+
+.header .hLogo a {
+    display: block;
+}
+
+.header .hMenu {
+    height: 100%;
+    padding: 52px 0;
+}
+
+.header .hMenu .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: #fff;
+}
+
+.header .hMenu .menu .depth1 {
+    display: inline-block;
+    padding-left: 0;
+    text-align: left;
+    vertical-align: top;
+    margin-left: -136px;
+}
+
+.header .hMenu .menu .depth1 a {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.header .hMenu .menu .depth1>li {
+    float: left;
+}
+
+.header .hMenu .menu .depth1>li .dth1 {
+    position: relative;
+    margin-right: 85px;
+    padding: 0 10px;
+    color: #292929;
+    font-size: 20px;
+    line-height: 140px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.header .hMenu .menu .depth1>li .dth1.current:before {
+    content: '';
+    position: absolute;
+    bottom: 55px;
+    left: 10px;
+    right: 10px;
+    border-bottom: 1px solid #000
+}
+
+.header .hMenu .menu .depth1>li.on .dth1:after,
+.header .hMenu .menu .depth1>li:hover .dth1:after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    border-bottom: 3px solid #f5bd43
+}
+
+.header .hMenu .menu .depth2 {
+    display: none;
+    padding: 35px 10px 45px
+}
+
+.header .hMenu .menu .depth2>li {
+    margin-top: 15px
+}
+
+.header .hMenu .menu .depth2>li:first-child {
+    margin-top: 0
+}
+
+.header .hMenu .menu .depth2>li .dth2 {
+    line-height: 1.6;
+    border-bottom: 1px solid transparent
+}
+
+.header .hMenu .menu .depth2>li .dth2:hover,
+.header .hMenu .menu .depth2>li .dth2:focus {
+    color: #000;
+    border-bottom: 1px solid #000
+}
+
+.header .hMenu .util {
+    position: relative;
+    float: right;
+    margin: 0 0 0 50px
+}
+
+.header .hMenu .util .renter {
+    display: inline-block;
+    width: 80px;
+    padding-top: 2px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 34px;
+    text-align: center;
+    border-radius: 48px;
+    background: #db0007;
+}
+
+.header .hMenu .util .lang {
+    display: inline-block;
+    width: 80px;
+    padding-top: 2px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 34px;
+    text-align: center;
+    background: #264a36;
+    border-radius: 48px
+}
+
+.header .hMenu .util .recruit {
+    display: inline-block;
+    width: 80px;
+    padding-top: 2px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 34px;
+    text-align: center;
+    background: #d87e00;
+    border-radius: 48px
+}
+
+.header .hMenu .util .srch {
+    margin-left: 26px;
+    width: 36px;
+    height: 36px;
+    text-indent: -9999px;
+    background: url(../images/common/ico_search.png) 0 0 no-repeat
+}
+
+.header.open {
+    z-index: 11
+}
+
+.header.open .hMenu .menu .depth1:before {
+    content: '';
+    position: absolute;
+    top: 140px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #e2e2e2
+}
+
+.header.open .hMenu .menu .depth1:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #ffbc0d
+}
+
+.header.open .hMenu .menu .depth1 .dth1.current:before {
+    display: none
+}
+
+.header.open .hMenu .menu .depth1 .depth2 {
+    display: block
+}
+
+.header.fixed {
+    position: fixed;
+    height: 81px;
+    z-index: 11
+}
+
+.header.fixed .hLogo {
+    top: 18px
+}
+
+.header.fixed .hLogo img {
+    height: 45px
+}
+
+.header.fixed .hMenu {
+    padding: 22px 0
+}
+
+.header.fixed .hMenu .menu .depth1>li .dth1 {
+    line-height: 80px
+}
+
+.header.fixed .hMenu .menu .depth1>li .dth1.current:before {
+    bottom: 25px
+}
+
+.header.fixed.open .hMenu .menu .depth1:before {
+    top: 80px
+}
+
+.header .dummy {
+    height: 100%;
+    overflow: hidden
+}
+
+.header.fixed .dummy img {
+    margin-top: -140px
+}
+
+.topSearch {
+    display: inline-block
+}
+
+.topSearch .srchField {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 1168px;
+    margin: -130px 0 0 -584px;
+    z-index: 9999
+}
+
+.topSearch .srchField .form {
+    position: relative;
+    margin: 40px 0;
+    padding-right: 184px
+}
+
+.topSearch .srchField .form input {
+    width: 100%;
+    padding: 0 38px
+}
+
+.topSearch .srchField .form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 172px
+}
+
+.topSearch .srchField .close {
+    width: 90px;
+    height: 90px;
+    margin-top: 100px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url(../images/common/btn_close.png) 0 0 no-repeat
+}
+
+.topSearch.open .srchField,
+.topSearch.open .dimmed {
+    display: block;
+}
+
+/* container */
+
+#container {
+    width: 100%;
+}
+
+.content .contArea {
+    padding: 30px 0 60px;
+}
+
+.content .contArea.bgG {
+    background: #fbfbfb;
+}
+
+.content .contArea>:first-child {
+    margin-top: 0 !important;
+}
+
+.content .contArea>.inner {
+    position: static !important;
+}
+
+.aside {
+    position: fixed;
+    bottom: 110px;
+    left: 49%;
+    margin: 0 0 0 635px;
+    z-index: 10;
+}
+
+.aside .goDelivery {
+    display: block;
+    width: 121px;
+    height: 121px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url(../images/common/btn_delivery_04.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.aside .go_story {
+    display: block;
+    width: 121px;
+    height: 121px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url(../images/common/btn_story_04.png) no-repeat center 0;
+    margin-bottom: 20px;
+}
+
+.aside.fixedB {
+    position: absolute;
+    bottom: 378px
+}
+
+.btnTop {
+    position: fixed;
+    bottom: 45px;
+    left: 50%;
+    width: 51px;
+    height: 48px;
+    margin: 0 0 0 650px;
+    background: url(../images/common/btn_top_04.png) 0 14px no-repeat;
+    text-indent: -9999px;
+    font-size: 1px;
+    z-index: 10
+}
+
+.btnTop.fixedB {
+    position: absolute;
+    bottom: 310px
+}
+
+/* main */
+.mainEvent.basicSwiper {
+    position: relative;
+    max-width: 1900px;
+    margin: 0 auto
+}
+
+.mainEvent .swiper li {
+    position: relative;
+    float: left;
+    height: 542px;
+    overflow: hidden;
+    text-align: center;
+    padding: 1px 0;
+}
+
+.mainEvent .swiper li a {
+    display: inline-block;
+    margin: 0 -100%;
+    vertical-align: top
+}
+
+.mainEvent .swiper li span {
+    display: inline-block;
+    margin: 0 -100%;
+    vertical-align: top
+}
+
+/* .mainEvent .swiper li img {
+    height: 100%
+}
+
+.mainEvent .swiper li video {
+    width: 100%;
+}
+
+.mainEvent .swiper li.video .video-box {
+    width: 1920px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.mainEvent .swiper li.video .sound {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/main/icon_sound_on.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    font-size: 0;
+}
+
+.mainEvent .swiper li.video .sound.off {
+    background-image: url(../images/main/icon_sound_off.png);
+} */
+
+.mainEvent .indicator {
+    position: absolute;
+    left: 50%;
+    bottom: 27px;
+    width: 366px;
+    margin-left: -183px;
+    padding-left: 66px
+}
+
+.mainEvent .indicator .timer {
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 6px;
+    overflow: hidden;
+    text-indent: -9999px;
+    vertical-align: top;
+    border-radius: 6px;
+    background: #fff
+}
+
+.mainEvent .indicator .timer .bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 6px;
+    background: #ffbc0d
+}
+
+.mainEvent .indicator .play {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    margin-top: -18px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url(../images/main/bg_swiper_new.png) -92px 0 no-repeat
+}
+
+.mainEvent .indicator .play.pause {
+    background-position: -92px -36px
+}
+
+.mainEvent .ctrl {
+    position: absolute;
+    top: 50%;
+    width: 90px;
+    height: 90px;
+    margin-top: -45px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url(../images/main/bg_swiper_new.png) 0 0 no-repeat;
+    z-index: 1
+}
+
+.mainEvent .ctrl.prev {
+    left: 0
+}
+
+.mainEvent .ctrl.next {
+    right: 0;
+    background-position: 0 -90px
+}
+
+.mainCont {
+    background: #fbfbfb
+}
+
+.mainCont .titMain {
+    margin: 0 0 60px;
+    color: #292929;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1
+}
+
+.mainCont .whatsNew {
+    margin: 0 0 -35px -35px
+}
+
+.mainCont .whatsNew:after {
+    content: '';
+    display: block;
+    clear: both
+}
+
+.mainCont .whatsNew li {
+    float: left;
+    width: 366px;
+    height: 438px;
+    margin: 0 0 35px 35px
+}
+
+.mainCont .whatsNew li a {
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .1)
+}
+
+.mainCont .whatsNew li .con {
+    padding: 24px 30px
+}
+
+.mainCont .whatsNew li .con .tit {
+    display: -webkit-box;
+    max-height: 118px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: 18px;
+    color: #292929;
+    font-weight: 500;
+    line-height: 1.7
+}
+
+.mainCont .whatsNew li.official a {
+    padding: 76px 50px;
+    color: #fff;
+    font-size: 28px;
+    border-color: #de0009;
+    background: #de0009
+}
+
+.mainCont .whatsNew li.official .tit {
+    display: block;
+    margin-bottom: 35px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #eb898e
+}
+
+.mainCont .whatsNew li.official .txt {
+    display: block;
+    font-weight: 400;
+    line-height: 1.4
+}
+
+/* footer */
+.footer {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+    background: #292929
+}
+
+.footer .footArea {
+    padding: 45px 0 55px;
+    text-align: left
+}
+
+.footer .footArea:after {
+    content: '';
+    display: block;
+    clear: both
+}
+
+.footer .fUtil {
+    float: left;
+    width: 190px
+}
+
+.footer .fUtil li+li {
+    margin-top: 5px
+}
+
+.footer .fUtil .privacy {
+    color: yellow
+}
+
+.footer .fSns {
+    float: right
+}
+
+.footer .fSns li {
+    float: left;
+    margin-left: 20px
+}
+
+.footer .fSns a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url(../images/common/ico_sns.png) 0 0 no-repeat
+}
+
+.footer .fSns a.fb {
+    background-position: 0 0
+}
+
+.footer .fSns a.ig {
+    background-position: 0 -40px
+}
+
+.footer .fSns a.yt {
+    background-position: 0 -80px
+}
+
+.footer .fSns a.ks {
+    background-position: 0 -120px
+}
+
+.footer .fSns .web_accessibility {
+    margin-top: -5px;
+}
+
+.footer .fSns .web_accessibility a {
+    width: 100px;
+    height: 71px;
+    text-indent: 0;
+    background: none;
+}
+
+.footer .fSns .web_accessibility a img {
+    width: 100%;
+}
+
+.footer .fInfo {
+    float: left;
+    font-weight: 400;
+    opacity: .6
+}
+
+.footer .fInfo .info li+li {
+    margin-top: 5px
+}
+
+.footer .fInfo .copy {
+    margin-top: 5px
+}
+
+.footer .f_isms {
+    float: right;
+    width: 340px;
+    margin-top: 24px;
+}
+
+.footer .f_isms .icon {
+    float: left;
+    width: 60px;
+    background-color: #fff;
+    margin-right: 15px;
+    border-radius: 5px;
+}
+
+.footer .f_isms .icon img {
+    width: 100%;
+}
+
+.footer .f_isms p {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.footer .f_isms .date {
+    padding-top: 6px;
+}
+
+.footer .f_isms:after {
+    content: "";
+    display: block;
+    clear: both;
+}
